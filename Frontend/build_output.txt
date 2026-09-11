@@ -1,0 +1,29 @@
+
+> frontend@0.0.0 build
+> vite build
+
+[36mvite v8.2.0 [32mbuilding client environment for production...[36m[39m
+[2K
+transforming...Γ£ô 1867 modules transformed.
+rendering chunks...
+Γ£ù Build failed in 683ms
+error during build:
+Build failed with 1 error:
+
+[MISSING_EXPORT] "CloudSearch" is not exported by "node_modules/lucide-react/dist/esm/lucide-react.mjs".
+   Γò¡ΓöÇ[ src/pages/SearchBooks.jsx:6:37 ]
+   Γöé
+ 6 Γöé import { Search, Info, AlertCircle, CloudSearch, Inbox } from "lucide-react";
+   Γöé                                     ΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇ  
+   Γöé                                          Γò░ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ Missing export
+ΓöÇΓöÇΓöÇΓò»
+
+    at aggregateBindingErrorsIntoJsError (file:///C:/Users/Sayan/OneDrive/Desktop/Intersip-Reports/Library%20Management%20%20System/Frontend/node_modules/rolldown/dist/shared/error-BgfXq0Tb.mjs:48:18)
+    at unwrapBindingResult (file:///C:/Users/Sayan/OneDrive/Desktop/Intersip-Reports/Library%20Management%20%20System/Frontend/node_modules/rolldown/dist/shared/error-BgfXq0Tb.mjs:18:128)
+    at #build (file:///C:/Users/Sayan/OneDrive/Desktop/Intersip-Reports/Library%20Management%20%20System/Frontend/node_modules/rolldown/dist/shared/rolldown-DP_p9pd3.mjs:132:34)
+    at async buildEnvironment (file:///C:/Users/Sayan/OneDrive/Desktop/Intersip-Reports/Library%20Management%20%20System/Frontend/node_modules/vite/dist/node/chunks/node.js:33669:66)
+    at async Object.build (file:///C:/Users/Sayan/OneDrive/Desktop/Intersip-Reports/Library%20Management%20%20System/Frontend/node_modules/vite/dist/node/chunks/node.js:34091:19)
+    at async Object.buildApp (file:///C:/Users/Sayan/OneDrive/Desktop/Intersip-Reports/Library%20Management%20%20System/Frontend/node_modules/vite/dist/node/chunks/node.js:34088:153)
+    at async CAC.<anonymous> (file:///C:/Users/Sayan/OneDrive/Desktop/Intersip-Reports/Library%20Management%20%20System/Frontend/node_modules/vite/dist/node/cli.js:776:3) {
+  errors: [Getter/Setter]
+}

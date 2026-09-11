@@ -1,0 +1,22 @@
+ISSUES: 18 | BOOKS in DB: 29
+
+MISS ISS-0001  book_id='LIB-BK-0002'  status=Returned
+MISS ISS-0002  book_id='LIB-BK-0002'  status=Returned
+MISS ISS-0003  book_id='LIB-BK-0001'  status=Returned
+MISS ISS-0004  book_id='LIB-BK-0003'  status=Returned
+MISS ISS-0005  book_id='LIB-BK-0002'  status=Returned
+MISS ISS-0006  book_id='LIB-BK-0003'  status=Returned
+MISS ISS-0007  book_id='LIB-BK-0003'  status=Returned
+MISS ISS-0008  book_id='LIB-BK-0004'  status=Returned
+MISS ISS-0009  book_id='LIB-BK-0005'  status=Returned
+MISS ISS-0010  book_id='LIB-BK-0002'  status=Returned
+MISS ISS-0011  book_id='LIB-BK-0004'  status=Returned
+MISS ISS-0012  book_id='LIB-BK-0002'  status=Returned
+MISS ISS-0013  book_id='LIB-BK-0021'  status=Returned
+MISS ISS-0014  book_id='LIB-BK-0022'  status=Returned
+OK   LIB-IS-0001  book_id='LIB-BK-0038'  title='Atomic Habits'  status=Returned
+OK   I-0001  book_id='LIB-BK-0038'  title='Atomic Habits'  status=Issued
+OK   I-0002  book_id='LIB-BK-0047'  title='The Housemaid: An Absolutely Addictive Psychological Thriller with a Jaw-dropping Twist'  status=Issued
+OK   I-0003  book_id='LIB-BK-0061'  title='The Encyclopedia of Weapons of World War II'  status=Issued
+
+Matched: 4 | Orphaned: 14

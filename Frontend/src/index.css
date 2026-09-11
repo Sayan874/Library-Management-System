@@ -1,0 +1,394 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   CSS CUSTOM PROPERTIES  –  lighter = more readable
+   ============================================================ */
+:root {
+  --background: 228 28% 12%;
+  --foreground: 210 30% 96%;
+
+  --card: 226 24% 19%;
+  --card-foreground: 210 30% 96%;
+
+  --popover: 226 24% 19%;
+  --popover-foreground: 210 30% 96%;
+
+  --primary: 247 72% 68%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 224 18% 28%;
+  --secondary-foreground: 210 30% 96%;
+
+  --muted: 224 18% 24%;
+  --muted-foreground: 215 20% 72%;
+
+  --accent: 232 20% 30%;
+  --accent-foreground: 210 30% 96%;
+
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 224 16% 32%;
+  --input: 224 18% 26%;
+  --ring: 247 72% 68%;
+
+  --radius: 1rem;
+}
+
+/* ============================================================
+   BASE RESET
+   ============================================================ */
+*,
+*::before,
+*::after {
+  border-color: hsl(var(--border));
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  -webkit-font-smoothing: antialiased;
+  font-family: "Segoe UI Variable", "Segoe UI", Inter, Manrope, system-ui, sans-serif;
+  background-image:
+    radial-gradient(ellipse at top left, hsl(247 72% 68% / 0.09), transparent 22rem),
+    radial-gradient(ellipse at bottom right, hsl(226 60% 50% / 0.07), transparent 20rem);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* ============================================================
+   COMPONENT CLASSES
+   ============================================================ */
+
+/* ── App Shell ── */
+.app-shell {
+  min-height: 100vh;
+}
+
+/* ── Surface cards — clearly visible ── */
+.app-surface {
+  border-radius: 1.25rem;
+  border: 1px solid hsl(var(--border));
+  background-color: hsl(var(--card));
+  box-shadow: 0 8px 32px -8px rgba(0, 0, 0, 0.5);
+}
+
+.app-surface-muted {
+  border-radius: 1.25rem;
+  border: 1px solid hsl(var(--border));
+  background-color: hsl(var(--muted));
+  box-shadow: 0 4px 16px -4px rgba(0, 0, 0, 0.35);
+}
+
+/* ── Page header ── */
+.page-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 1.5rem;
+  border: 1px solid hsl(var(--border));
+  padding: 1.25rem;
+  background: linear-gradient(135deg, hsl(var(--card)), hsl(var(--accent)));
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    padding: 1.75rem;
+  }
+}
+
+.page-title {
+  font-size: 1.875rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: hsl(var(--foreground));
+}
+
+@media (min-width: 768px) {
+  .page-title {
+    font-size: 2.25rem;
+  }
+}
+
+.page-description {
+  max-width: 42rem;
+  font-size: 0.875rem;
+  line-height: 1.625;
+  color: hsl(var(--muted-foreground));
+}
+
+@media (min-width: 768px) {
+  .page-description {
+    font-size: 0.9375rem;
+  }
+}
+
+.section-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: hsl(var(--foreground));
+}
+
+.section-subtitle {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+}
+
+/* ── Form inputs ── */
+.input-base {
+  height: 2.75rem;
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid hsl(var(--border));
+  background-color: hsl(var(--input));
+  padding: 0 0.75rem;
+  font-size: 0.875rem;
+  color: hsl(var(--foreground));
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.input-base::placeholder {
+  color: hsl(var(--muted-foreground));
+}
+
+.input-base:focus {
+  border-color: hsl(var(--ring));
+  box-shadow: 0 0 0 2px hsl(var(--ring) / 0.25);
+}
+
+.textarea-base {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid hsl(var(--border));
+  background-color: hsl(var(--input));
+  padding: 0.625rem 0.75rem;
+  font-size: 0.875rem;
+  color: hsl(var(--foreground));
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+  resize: vertical;
+}
+
+.textarea-base::placeholder {
+  color: hsl(var(--muted-foreground));
+}
+
+.textarea-base:focus {
+  border-color: hsl(var(--ring));
+  box-shadow: 0 0 0 2px hsl(var(--ring) / 0.25);
+}
+
+.select-base {
+  height: 2.75rem;
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid hsl(var(--border));
+  background-color: hsl(var(--input));
+  padding: 0 0.75rem;
+  font-size: 0.875rem;
+  color: hsl(var(--foreground));
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.select-base:focus {
+  border-color: hsl(var(--ring));
+  box-shadow: 0 0 0 2px hsl(var(--ring) / 0.25);
+}
+
+/* ── Buttons ── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 2.75rem;
+  padding: 0 1.25rem;
+  border-radius: 0.75rem;
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  font-size: 0.875rem;
+  font-weight: 600;
+  box-shadow: 0 4px 14px -4px hsl(var(--primary) / 0.5);
+  transition: transform 0.2s, opacity 0.2s;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  opacity: 0.92;
+}
+
+.btn-primary:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 2.75rem;
+  padding: 0 1.25rem;
+  border-radius: 0.75rem;
+  border: 1px solid hsl(var(--border));
+  background-color: hsl(var(--secondary));
+  color: hsl(var(--foreground));
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-secondary:hover {
+  background-color: hsl(var(--accent));
+}
+
+.btn-secondary:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 2.75rem;
+  padding: 0 1rem;
+  border-radius: 0.75rem;
+  background-color: transparent;
+  color: hsl(var(--muted-foreground));
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.2s, color 0.2s;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.btn-ghost:hover {
+  background-color: hsl(var(--accent));
+  color: hsl(var(--foreground));
+}
+
+.btn-ghost:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* ── Icon chip ── */
+.icon-chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 1rem;
+  border: 1px solid hsl(var(--border));
+  background-color: hsl(var(--accent));
+  color: hsl(var(--primary));
+}
+
+/* ── Status badge ── */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  border: 1px solid;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* ── Table ── */
+.table-wrap {
+  overflow-x: auto;
+}
+
+.table-base {
+  width: 100%;
+  text-align: left;
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.table-head {
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: hsl(var(--muted-foreground));
+  background-color: hsl(var(--muted));
+}
+
+.table-head th {
+  padding: 0.875rem 1.25rem;
+  font-weight: 600;
+}
+
+.table-row {
+  border-top: 1px solid hsl(var(--border));
+  transition: background-color 0.15s;
+}
+
+.table-row:hover {
+  background-color: hsl(var(--accent));
+}
+
+/* ── Uniform table cell typography ── */
+.table-base td,
+.table-base td * {
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: "Segoe UI Variable", "Segoe UI", Inter, Manrope, system-ui, sans-serif;
+  letter-spacing: 0;
+}
+
+/* ── Metric card ── */
+.metric-card {
+  border-radius: 1.25rem;
+  border: 1px solid hsl(var(--border));
+  background-color: hsl(var(--card));
+  box-shadow: 0 8px 32px -8px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  padding: 1.25rem;
+  position: relative;
+}
+
+/* ============================================================
+   CUSTOM SCROLLBAR
+   ============================================================ */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--muted-foreground) / 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(var(--muted-foreground) / 0.55);
+}

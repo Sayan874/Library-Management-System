@@ -1,0 +1,8 @@
+searchbar.jsx:6: useEffect(() => {
+Borrow.jsx:65: useEffect(() => { loadData(); }, []);
+Dashboard.jsx:18: useEffect(() => {
+LibraryBooks.jsx:35: useEffect(() => { loadBooks(); }, [loadBooks]);
+Members.jsx:36: useEffect(() => { loadData(); }, [loadData]);
+Reports.jsx:11: useEffect(() => {
+Return.jsx:20: useEffect(() => {
+Staff.jsx:37: useEffect(() => { loadData(); }, [loadData]);

@@ -1,0 +1,24 @@
+=== All MongoDB databases ===
+
+DB: admin
+  Collection 'system.version': 1 documents
+
+DB: config
+  Collection 'system.sessions': 5 documents
+
+DB: library_management_system
+  Collection 'books': 29 documents
+  Collection 'counters': 2 documents
+  Collection 'system_meta': 1 documents
+  Collection 'issues': 18 documents
+    -> {'issue_id': 'ISS-0001', 'book_id': 'LIB-BK-0002', 'status': 'Returned'}
+    -> {'issue_id': 'ISS-0002', 'book_id': 'LIB-BK-0002', 'status': 'Returned'}
+    -> {'issue_id': 'ISS-0003', 'book_id': 'LIB-BK-0001', 'status': 'Returned'}
+    -> {'issue_id': 'ISS-0004', 'book_id': 'LIB-BK-0003', 'status': 'Returned'}
+    -> {'issue_id': 'ISS-0005', 'book_id': 'LIB-BK-0002', 'status': 'Returned'}
+  Collection 'book_titles': 7 documents
+  Collection 'members': 6 documents
+  Collection 'staff': 3 documents
+
+DB: local
+  Collection 'startup_log': 14 documents

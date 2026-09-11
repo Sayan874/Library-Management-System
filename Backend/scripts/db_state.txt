@@ -1,0 +1,32 @@
+=== ALL BOOKS (7 documents) ===
+  LIB-BK-0008      title=Atomic Habits: an Easy and Proven Way to  avail=1/1  status=Available
+  LIB-BK-0005      title=Can't Hurt Me                             avail=9/9  status=Available
+  LIB-BK-0003      title=How To Win Friends and Influence People   avail=8/8  status=Available
+  LIB-BK-0006      title=Playing It My Way                         avail=1/1  status=Available
+  LIB-BK-0002      title=The 48 Laws of Power                      avail=4/5  status=Available
+  LIB-BK-0004      title=The Housemaid: An Absolutely Addictive P  avail=8/11  status=Available
+  LIB-BK-0009      title=Thinking, Fast and Slow                   avail=1/1  status=Available
+
+=== DUPLICATE BOOK_IDS (0 found) ===
+
+=== ALL ISSUES (14 records) ===
+  ISS-0014    book_id=LIB-BK-0004      member=LIB-MEM-0002     status=Issued      book_name=The Housemaid: An Absolutely A
+  ISS-0012    book_id=LIB-BK-0002      member=LIB-MEM-0004     status=Issued      book_name=The 48 Laws of Power
+  ISS-0013    book_id=LIB-BK-0004      member=LIB-MEM-0004     status=Issued      book_name=The Housemaid: An Absolutely A
+  ISS-0007    book_id=LIB-BK-0003      member=LIB-MEM-0003     status=Returned    book_name=How To Win Friends and Influen
+  ISS-0009    book_id=LIB-BK-0005      member=LIB-MEM-0001     status=Returned    book_name=Can't Hurt Me
+  ISS-0010    book_id=LIB-BK-0002      member=LIB-MEM-0004     status=Returned    book_name=The 48 Laws of Power
+  ISS-0011    book_id=LIB-BK-0004      member=LIB-MEM-0003     status=Issued      book_name=The Housemaid: An Absolutely A
+  ISS-0001    book_id=LIB-BK-0002      member=LIB-MEM-0001     status=Returned    book_name=The 48 Laws of Power
+  ISS-0002    book_id=LIB-BK-0002      member=LIB-MEM-0001     status=Returned    book_name=The 48 Laws of Power
+  ISS-0003    book_id=LIB-BK-0001      member=LIB-MEM-0001     status=Returned    book_name=Unknown
+  ISS-0005    book_id=LIB-BK-0002      member=LIB-MEM-0004     status=Returned    book_name=The 48 Laws of Power
+  ISS-0008    book_id=LIB-BK-0004      member=LIB-MEM-0004     status=Returned    book_name=The Housemaid: An Absolutely A
+  ISS-0004    book_id=LIB-BK-0003      member=LIB-MEM-0003     status=Returned    book_name=How To Win Friends and Influen
+  ISS-0006    book_id=LIB-BK-0003      member=LIB-MEM-0002     status=Returned    book_name=How To Win Friends and Influen
+
+=== ALL MEMBERS (4) ===
+  LIB-MEM-0003     name=Harshit Arora         status=Active
+  LIB-MEM-0002     name=Raman Singh           status=Active
+  LIB-MEM-0005     name=Rohan Malhotra        status=Active
+  LIB-MEM-0004     name=Vihan Malhotra        status=Active
